@@ -1,0 +1,229 @@
+.basket-card {
+  &__container {
+    &:last-child {
+      border-bottom: 1px dashed #C6CAD1;
+    }
+  }
+  &__box {
+    border-top: 1px dashed #C6CAD1;
+  }
+  &__image-container {
+    width: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    margin-right: 20px;
+    height: 190px;
+
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #111111;
+    width: 385px;
+    margin: 10px 0;
+  }
+  &__description {
+    width: 444px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3F4E65;
+  }
+  &__quantity-box {
+    display: flex;
+    align-items: center;
+  }
+  &__quantity-button {
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    border: 0;
+    padding: 4px 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child {
+      margin-right: 16px;
+    }
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+  &__quantity-value {
+    font-size: 14px;
+    line-height: 130%;
+    color: #3F4E65
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #111111;
+  }
+  &__quantity-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+  }
+  &__divider {
+    padding: 0 44px;
+    border-left: 1px dashed #C6CAD1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &__delete-button {
+    border: 0;
+    background: #FFC85E;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .basket-card {
+    &__container {
+      width: 960px;
+    }
+    &__price {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__divider {
+      padding: 0 20px;
+    }
+    &__description {
+      width: 350px;
+    }
+    &__quantity-container {
+      margin-left: 20px;
+    }
+    &__image {
+      height: 100px;
+    }
+    &__card {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  .basket-card {
+    &__image {
+      height: 197px;
+    }
+    &__container {
+      width: 95%;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      width: 95%;
+      font-weight: 500;
+    }
+    &__card {
+      flex-flow: column;
+      width: 95%;
+
+    }
+    &__description {
+      width: 95%;
+      margin-bottom: 15px;
+    }
+    &__box {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+    }
+    &__price {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+    }
+    &__divider {
+      padding: 0 13px;
+    }
+
+  }
+  .catalog {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .basket-card {
+    &__image {
+      height: 197px;
+    }
+    &__container {
+      width: 95%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      width: 95%;
+      font-weight: 500;
+    }
+    &__card {
+      flex-flow: column;
+      width: 95%;
+
+    }
+    &__description {
+      width: 95%;
+      margin-bottom: 15px;
+    }
+    &__box {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+    }
+    &__price {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+    }
+    &__divider {
+      padding: 0 13px;
+    }
+
+  }
+  .catalog {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

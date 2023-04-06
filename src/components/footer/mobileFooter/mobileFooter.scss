@@ -1,0 +1,104 @@
+@media (max-width: 575px) {
+  .background {
+    display: none;
+  }
+
+  .background-mobile {
+    background: #3F4E65;
+  }
+  .footer-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-input {
+    &__box {
+      margin: 15px 0 30px 0;
+    }
+  }
+  .mobile-credit-cards-box {
+    display: flex;
+    margin-top: 10px;
+    width: 127px;
+    justify-content: space-between;
+  }
+  .mobile-socials-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-logo-box {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-contacts-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-text {
+    &__box {
+      margin: 15px 0;
+    }
+    &__h2 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    &__h2-lined {
+      text-decoration: underline;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    &__h2-mobile-phone {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    &__h1-mobile {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    &__h2-mobile {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #FFFFFF;
+      list-style-type: none;
+    }
+    &__h2-mobile-list-item {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #FFFFFF;
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+  }
+  .mobile-container-footer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 28px 0;
+  }
+  .price-button-mobile {
+    background: #FFC85E;
+    border-radius: 79px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+  }
+  .mobile-menu-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+.edit-page-input {
+  width: 600px;
+  padding: 5px 10px;
+  background: #fff;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.edit-page-box {
+  display: flex;
+  flex-flow: column;
+  margin: 100px 0;
+}
+
+/*# sourceMappingURL=editPage.css.map */

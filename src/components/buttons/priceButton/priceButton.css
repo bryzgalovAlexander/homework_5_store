@@ -1,0 +1,33 @@
+.price-button {
+  display: flex;
+  justify-content: center;
+  height: 59px;
+  align-items: center;
+  padding: 10px 54px;
+  background: #FFC85E;
+  border-radius: 79px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.price-button__icon {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .price-button {
+    max-width: 150px;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=priceButton.css.map */

@@ -1,0 +1,27 @@
+.catalog-button {
+  display: flex;
+  justify-content: center;
+  max-width: 192px;
+  height: 59px;
+  align-items: center;
+  padding: 10px 54px;
+  background: #FFC85E;
+  border-radius: 79px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+

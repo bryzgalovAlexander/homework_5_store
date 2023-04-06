@@ -1,0 +1,45 @@
+.select-card {
+  padding: 18px;
+  background: #FFFFFF;
+  box-shadow: 0 15px 70px -11px rgba(43, 28, 1, 0.04);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3F4E65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+  &__selected {
+    padding: 18px;
+    background: #d8fccc;
+    box-shadow: 0 15px 70px -11px rgba(43, 28, 1, 0.04);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #3F4E65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.select-cards-box {
+  display: flex;
+  margin: 40px 0;
+}

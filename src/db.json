@@ -1,0 +1,227 @@
+{
+  "data": [
+    {
+
+      "image": "image21.png",
+      "title": "Cредство для мытья посуды Crystal",
+      "isLiquid": true,
+      "size": 450,
+      "barcode": 4604049097548,
+      "manufacturer": "Нэфис",
+      "brand": "AOS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 48.76,
+      "type": ["Уход за лицом", "Уход за руками"]
+    },
+    {
+
+      "image": "image21-1.png",
+      "title": "Экологичное туалетное мыло. Литсея и бергамот",
+      "isLiquid": false,
+      "size": 90,
+      "barcode": 2304059097641,
+      "manufacturer": "BioMio",
+      "brand": "BioMio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 20.45,
+      "type": "Уход за руками"
+    },
+    {
+
+      "image": "image21-2.png",
+      "title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+      "isLiquid": false,
+      "size": "15X28.8",
+      "barcode": 6302314097530,
+      "manufacturer": "Procter & Gamble",
+      "brand": "ARIEL",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 195.99,
+      "type": "Гигиеническая продукция"
+    },
+    {
+
+      "image": "image2112.png",
+      "title": "Порошок стиральный Автомат 100 пятен COMPACT",
+      "isLiquid": false,
+      "size": 450,
+      "barcode": 1204169107652,
+      "manufacturer": "Нефис",
+      "brand": "BIMAX",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 154.51,
+      "type": ["Уход за лицом", "Уход за руками"]
+    },
+    {
+
+      "image": "image213.png",
+      "title": "Ср-во для мытья посуды Апельсин+мята",
+      "isLiquid": true,
+      "size": 450,
+      "barcode": 23015169107663,
+      "manufacturer": "Нэфис",
+      "brand": "Sorti",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 51.99,
+      "type": "Гигиеническая продукция"
+    },
+
+    {
+
+      "image": "nivea-soft.png",
+      "title": "Интенсивный увлажняющий крем, для лица, рук и тела, с маслом жожоба и витамином Е",
+      "isLiquid": true,
+      "size": 100,
+      "barcode": 5512349097548,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 77.39,
+      "type": "Уход за лицом"
+    },
+    {
+
+      "image": "nivea-strawberry-soap.png",
+      "title": "Клубника и молоко Увлажняющее мыло",
+      "isLiquid": false,
+      "size": 90,
+      "barcode": 5466959092137,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 15.45,
+      "type": "Уход за руками"
+    },
+    {
+
+      "image": "nivea-men.png",
+      "title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+      "isLiquid": true,
+      "size": 200,
+      "barcode": 8802315077511,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 99.99,
+      "type": "Средства для бритья"
+    },
+    {
+
+      "image": "dove-secrets.png",
+      "title": "NOURISHING SECRETS ШАМПУНЬ Восстановление с куркумой и кокосовым маслом, для укрепления волос",
+      "isLiquid": true,
+      "size": 250,
+      "barcode": 4324170102259,
+      "manufacturer": "Unilever",
+      "brand": "DOVE",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 68.32,
+      "type": "Уход за волосами"
+    },
+    {
+
+      "image": "image21.png",
+      "title": "Моющее средство",
+      "isLiquid": true,
+      "size": 200,
+      "barcode": 4611223097548,
+      "manufacturer": "Нэфис",
+      "brand": "AOS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 56.43,
+      "type": "Уход за руками"
+    },
+    {
+
+      "image": "image21-1.png",
+      "title": "Экологичное туалетное мыло. Литсея и бергамот",
+      "isLiquid": false,
+      "size": 120,
+      "barcode": 2333319097641,
+      "manufacturer": "BioMio",
+      "brand": "BioMio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 89.99,
+      "type": "Уход за руками"
+    },
+    {
+
+      "image": "image21-2.png",
+      "title": "Гель СМС Liquid Capsules Горный родник",
+      "isLiquid": false,
+      "size": "25X25",
+      "barcode": 4573125097530,
+      "manufacturer": "Procter & Gamble",
+      "brand": "ARIEL",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 399.99,
+      "type": "Гигиеническая продукция"
+    },
+    {
+
+      "image": "image2112.png",
+      "title": "Порошок стиральный",
+      "isLiquid": false,
+      "size": 700,
+      "barcode": 1975159111652,
+      "manufacturer": "Нефис",
+      "brand": "BIMAX",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 250.33,
+      "type": "Гигиеническая продукция"
+    },
+    {
+
+      "image": "image213.png",
+      "title": "Ср-во для мытья посуды",
+      "isLiquid": true,
+      "size": 300,
+      "barcode": 23015000107210,
+      "manufacturer": "Нэфис",
+      "brand": "Sorti",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 510.99,
+      "type": "Гигиеническая продукция"
+    },
+
+    {
+
+      "image": "nivea-soft.png",
+      "title": "Интенсивный увлажняющий крем для лица",
+      "isLiquid": true,
+      "size": 50,
+      "barcode": 2212245437598,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 477.39,
+      "type": "Уход за лицом"
+    },
+    {
+
+      "image": "nivea-strawberry-soap.png",
+      "title": "Увлажняющее мыло",
+      "isLiquid": false,
+      "size": 90,
+      "barcode": 1236932192667,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 390.45,
+      "type": "Уход за руками"
+    },
+    {
+
+      "image": "nivea-men.png",
+      "title": "Автомат Гель в растворимых капсулах Liquid",
+      "isLiquid": true,
+      "size": 200,
+      "barcode": 8124560775911,
+      "manufacturer": "Nivea",
+      "brand": "Nivea",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": 100.99,
+      "type": "Средства для бритья"
+    }
+  ]
+}

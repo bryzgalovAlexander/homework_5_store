@@ -1,0 +1,79 @@
+.filter__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #111111;
+}
+.filter__currency {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #111111;
+}
+.filter__price {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3F4E65;
+  margin: 0 5px 0 0;
+}
+.filter__price-currency-box {
+  display: flex;
+  margin: 10px 0 16px 0;
+}
+.filter__price-box {
+  display: flex;
+  justify-content: space-between;
+}
+.filter__input {
+  width: 100px;
+  text-align: center;
+  border: 0;
+  background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+  border-radius: 1000px;
+  color: #3F4E65;
+  margin-bottom: 30px;
+  padding: 4px 0;
+}
+.filter__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3F4E65;
+  margin-left: 10px;
+}
+.filter__checkbox-box {
+  margin: 5px 0;
+}
+.filter__checkbox-container {
+  margin: 15px 0;
+}
+.filter__title-box {
+  margin-bottom: 15px;
+}
+.filter__select-card {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #111111;
+  white-space: nowrap;
+  border-bottom: 1px dashed #C6CAD1;
+  padding: 20px 0;
+}
+.filter__select-card:last-child {
+  border-bottom: 0;
+}
+.filter__search {
+  border: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFC85E;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=filter.css.map */

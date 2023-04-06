@@ -1,0 +1,15 @@
+.basket {
+  &__order-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 100px 0;
+  }
+  &__card-container {
+    margin: 50px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+

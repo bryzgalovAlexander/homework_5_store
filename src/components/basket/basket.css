@@ -1,0 +1,14 @@
+.basket__order-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 100px 0;
+}
+.basket__card-container {
+  margin: 50px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=basket.css.map */

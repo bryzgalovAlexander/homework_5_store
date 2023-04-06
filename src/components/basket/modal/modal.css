@@ -1,0 +1,95 @@
+.modal__bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__window {
+  margin: 0 auto;
+  max-width: 735px;
+  max-height: 424px;
+  background: #fff;
+  border-radius: 8px;
+}
+.modal__gratitude {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #111111;
+  text-align: center;
+  margin: 24px 0 20px 0;
+}
+.modal__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #3F4E65;
+}
+.modal__close-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+  padding: 30px 30px 0 0;
+}
+.modal__close-button {
+  display: flex;
+  background: #fff;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modal__message-box {
+  display: flex;
+  flex-flow: column;
+  padding: 0 106px 134px 106px;
+}
+.modal__icon-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .modal__message-box {
+    display: flex;
+    flex-flow: column;
+    padding: 0 60px 60px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .modal__message-box {
+    display: flex;
+    flex-flow: column;
+    padding: 0 30px 60px 30px;
+  }
+}
+@media (max-width: 565px) {
+  .modal__message-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 290px;
+  }
+  .modal__gratitude {
+    font-size: 20px;
+  }
+  .modal__message-box {
+    padding: 0 0 87px 0;
+  }
+  .modal__close-box {
+    margin-bottom: 20px;
+  }
+  .modal__text {
+    font-size: 12px;
+    width: 197px;
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */

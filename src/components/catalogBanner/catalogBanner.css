@@ -1,0 +1,70 @@
+.banner__image {
+  position: relative;
+  height: 796px;
+}
+.banner__h1 {
+  color: #FFFFFF;
+  font-size: 70px;
+  line-height: 110%;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.banner__h2 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.banner__banner-container {
+  position: absolute;
+  top: 12.5%;
+}
+.banner__pluses-box {
+  display: flex;
+  width: 477px;
+  justify-content: space-between;
+  margin-top: 91px;
+}
+.banner__pluses-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 0 0 0 10px;
+}
+.banner__plus-box {
+  display: flex;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    margin: 0 auto;
+  }
+  .banner__box {
+    width: 960px;
+  }
+  .banner__image {
+    width: 500px;
+  }
+  .banner__h1 {
+    font-size: 60px;
+  }
+  .banner__h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .banner__banner-container {
+    display: none;
+  }
+  .banner__box {
+    display: none;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=catalogBanner.css.map */
