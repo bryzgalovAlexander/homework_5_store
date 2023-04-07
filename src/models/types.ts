@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export interface ICard {
     image: string;
     title: string;
@@ -16,13 +18,23 @@ export interface IBasket extends ICard {
     totalPrice: number;
 }
 
+export interface ISelectCard {
+    name: string;
+    isChecked: boolean
+}
+
+export interface IOption {
+    value: string;
+    label: string;
+}
+
 export interface IStoreState {
     data: ICard[];
     list: ICard[];
     basket: IBasket[];
     info: ICard | {};
     totalProductsPrice: number;
-    selectCards: string[];
+    selectCards: ISelectCard[];
     checkboxes: object;
     selectedCardsOn: string[],
     checkboxesOn: string[],

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './catalog.css';
-import  './selectCards/selectCards.css'
+import './selectCards/selectCards.css'
 import Filter from "./filter/filter";
 import Card from "./card/card";
 import {ICard} from "../../models/types";
@@ -73,24 +73,17 @@ const Catalog = () => {
                         </div>
                     </div>
                     <div className={'select-cards-box'}>
-                        {/*<button
-                            onClick={() => dispatch(showAllCards())}
-                            className={'select-card'}
-                        >
-                            Все
-                        </button>*/}
-                        {selectCards.map( cardName =>
-                                <button
-                                    key={cardName}
-                                    className={ 'select-card' }
-                                    onClick={() => {
-
+                        {selectCards.map(cardName =>
+                            <button
+                                key={cardName.name}
+                                className={cardName.isChecked ? 'select-card__selected' : 'select-card'}
+                                onClick={() => {
                                     dispatch(setDataBySelectCards(cardName))
                                 }}
-                                >
-                                    {cardName.split(' ').slice(0, 1)}<br/>
-                                    {cardName.split(' ').slice(1).join(' ')}
-                                </button>
+                            >
+                                {cardName.name.split(' ').slice(0, 1)}<br/>
+                                {cardName.name.split(' ').slice(1).join(' ')}
+                            </button>
                         )}
                     </div>
                     <div className={'catalog__filter-card-box'}>
@@ -103,8 +96,7 @@ const Catalog = () => {
                         {countOfPages.map(countOfPage =>
                             <button
                                 className={'catalog__paginate-button'}
-                                onClick={() => dispatch(paginate(countOfPage))}
-                            >
+                                onClick={() => dispatch(paginate(countOfPage))}>
                                 {countOfPage}
                             </button>
                         )}

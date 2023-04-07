@@ -56,8 +56,8 @@ const Filter = () => {
                     )}
                 </div>
                 <div className={'filter__select-cards'}>
-                    {selectCards.map(item =>
-                        <div key={item} className={'filter__select-card'}>{item}</div>
+                    {selectCards.map( card =>
+                        <div key={card.name} className={'filter__select-card'}>{card.name}</div>
                     )}
                 </div>
             </div>

@@ -1,5 +1,7 @@
 .card {
-  height: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 266px;
   background: #FFFFFF;
   box-shadow: 0 14px 39px -11px rgba(0, 0, 0, 0.06);

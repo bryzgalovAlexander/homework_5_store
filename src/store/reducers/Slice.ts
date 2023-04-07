@@ -1,4 +1,4 @@
-import {ICard, IBasket, IStoreState} from "../../models/types";
+import {ICard, IBasket, IStoreState, ISelectCard} from "../../models/types";
 import {createSlice, PayloadAction,} from "@reduxjs/toolkit";
 import db from '../../db.json';
 import selectCards from "../../components/catalog/selectCards/selectCards";
@@ -231,28 +231,32 @@ export const slice = createSlice({
             state.list = state.data
 
         },
-        setDataBySelectCards(state, action: PayloadAction<string>) {
+        setDataBySelectCards(state, action: PayloadAction<ISelectCard>) {
 
             state.data = data
 
             // типы карточек добавляются в selectCardsOn массив
-            if (state.selectedCardsOn.includes(action.payload)) {
-                state.selectedCardsOn = state.selectedCardsOn.filter(item => item !== action.payload)
+            if (state.selectedCardsOn.includes(action.payload.name)) {
+                state.selectCards.map(item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
+                state.selectedCardsOn = state.selectedCardsOn.filter(item => item !== action.payload.name)
             } else {
-                state.selectedCardsOn.push(action.payload)
+                state.selectCards.map(item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
+                state.selectedCardsOn.push(action.payload.name)
             }
 
-            state.data = state.data.filter(item =>
+            state.selectedCardsOn.map(item => item === action.payload.name ? item : '')
 
+            state.data = state.data.filter(item =>
                 Array.isArray(item.type) ?
-                    item.type[0].includes(action.payload) || item.type[1].includes(action.payload)
-                    : item.type.includes(state.selectedCardsOn.toString()))
+                    item.type[0].includes(action.payload.name) || item.type[1].includes(action.payload.name)
+                    : item.type.includes(state.selectedCardsOn.toString())
+            )
 
         },
         setSelectCards(state) {
             const allCards = state.data.map((card: ICard) => card.type).flat()
-            const uniqueCards = allCards.filter((value, index, array) => array.indexOf(value) === index);
-            state.selectCards = uniqueCards
+            const uniqueCards = allCards.filter( (value, index, array) => array.indexOf(value) === index);
+            state.selectCards = uniqueCards.map( (value: string) =>  ({name: value, isChecked: false}))
         },
     }
 })

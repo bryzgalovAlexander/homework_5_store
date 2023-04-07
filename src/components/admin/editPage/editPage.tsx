@@ -3,34 +3,17 @@ import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
 import {Link} from "react-router-dom";
 import {adminUpdateCard} from "../../../store/reducers/Slice";
 import './editPage.css'
-import Select from "react-select/base";
-
+import {IOption} from "../../../models/types";
+import Select from "react-select";
 
 const EditPage = () => {
 
     const adminEditMode = useAppSelector(store => store.reducer.adminEditMode)
-    const options = useAppSelector(store => store.reducer.selectCards)
+    const selectCards = useAppSelector(store => store.reducer.selectCards)
     const dispatch = useAppDispatch()
-    const [types, setTypes] = useState<any>([''])
-    const isMultiTypes = true
+    const [types, setTypes] = useState([])
 
-    const getTypesValue = () => {
-      if (types) {
-          // @ts-ignore
-          return isMultiTypes ? options.filter(item => types.indexOf(item.value) >= 0)
-              // @ts-ignore
-              : options.find(item => item.value === types)
-      } else {
-          return isMultiTypes ? [] : ''
-      }
-    }
-
-    const onChange = (newValue: any) => {
-        // @ts-ignore
-        setTypes(isMultiTypes ? newValue.map(item => item.value) : newValue.value)
-    }
-
-
+    const options = selectCards.map(selectCard => ({value: selectCard.name, label: selectCard.name}))
 
     const [editCard, setEditCard] = useState({
         ...adminEditMode,
@@ -43,6 +26,15 @@ const EditPage = () => {
         description: adminEditMode.description
     })
 
+    const handleOption = (selections: IOption[]) => {
+        // @ts-ignore
+        setEditCard({...editCard, type: selections.map(item => item.value)});
+    };
+
+    console.log(editCard)
+    console.log(types)
+
+
     return (
         <div className={'container'}>
             <div className={'edit-page-box'} key={adminEditMode.barcode}>
@@ -54,7 +46,6 @@ const EditPage = () => {
                         className={'edit-page-input'}
                     />
                 </div>
-
                 <div>
                     Описание
                     <input
@@ -88,12 +79,7 @@ const EditPage = () => {
                     />
                 </div>
                 <div>
-                    Тип
-                    <input
-                        onChange={(event) => setEditCard({...editCard, type: event.target.value})}
-                        placeholder={editCard.type}
-                        className={'edit-page-input'}
-                    />
+
                 </div>
                 <div>
                     Производитель
@@ -104,18 +90,12 @@ const EditPage = () => {
                 </div>
                 <div>
                     Тип ухода
-
-                    < // @ts-ignore
-                        Select
-                        placeholder={'выберите тип...'}
-                            onChange={onChange}
+                    <Select
+                        placeholder={editCard.type}
+                        isMulti
+                        options={options}
                         // @ts-ignore
-                            value={getTypesValue()}
-                            options={options}
-                            isMultiTypes={isMultiTypes}
-                    >
-
-                    </Select>
+                        onChange={handleOption}/>
                 </div>
                 <Link to={'/admin'}>
                     <button onClick={() => dispatch(adminUpdateCard(editCard))} className={'admin__button'}>
