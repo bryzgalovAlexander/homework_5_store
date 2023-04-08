@@ -7,8 +7,7 @@ import CatalogBanner from "./components/catalogBanner/catalogBanner";
 import Basket from "./components/basket/basket";
 import CardInfo from "./components/catalog/cardInfo/cardInfo";
 import {useAppDispatch, useAppSelector} from "./hooks/redux";
-import {ICard, IOption} from "./models/types";
-import { setCheckboxes, setSelectCards, showAllCards, updateTotal,} from "./store/reducers/Slice";
+import { setCheckboxes, setSelectCards, showAllCards, updateTotal, } from "./store/reducers/Slice";
 import MobileHeader from "./components/header/mobileHeader/mobileHeader";
 import MobileFooter from "./components/footer/mobileFooter/mobileFooter";
 import MobileCatalogBanner from "./components/catalogBanner/mobileCatalogBanner/mobileCatalogBanner";
@@ -17,10 +16,12 @@ import EditPage from "./components/admin/editPage/editPage";
 
 function App() {
 
-    // @ts-ignore
-    const info: ICard =  useAppSelector(state => state.reducer.info)
+    const info: any =  useAppSelector(state => state.reducer.info)
     const basket = useAppSelector(state => state.reducer.basket)
+    const data = useAppSelector(store => store.reducer.data)
     const dispatch = useAppDispatch();
+
+
 
     useEffect(() => {
         dispatch(showAllCards())

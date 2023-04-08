@@ -43,7 +43,9 @@ const Admin = () => {
                                     <div className={'card__annotation'}>
                                         <div className={'card__annotation-box'}>
                                             <p className={'card__annotation-title'}>Тип ухода: </p>
-                                            <p className={'card__annotation-subtext'}>{card.type}</p>
+                                            <p className={'card__annotation-subtext'}>
+                                                {Array.isArray(card.type) ? card.type.join(' / ') : card.type}
+                                            </p>
                                         </div>
                                         <div className={'card__annotation-box'}>
                                             <p className={'card__annotation-title'}>Штрихкод: </p>

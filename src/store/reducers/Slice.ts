@@ -1,7 +1,6 @@
 import {ICard, IBasket, IStoreState, ISelectCard} from "../../models/types";
 import {createSlice, PayloadAction,} from "@reduxjs/toolkit";
 import db from '../../db.json';
-import selectCards from "../../components/catalog/selectCards/selectCards";
 
 const {data} = db;
 
@@ -23,14 +22,28 @@ const initialState: IStoreState = {
 
 }
 
-
 export const slice = createSlice({
     name: 'store',
     initialState,
     reducers: {
+        updateStorage(state) {
+            localStorage.setItem('data', JSON.stringify(state.data))
+        },
         showAllCards(state) {
-            state.data = data
+
+            // @ts-ignore
+            console.log()
+            // @ts-ignore
+            if (JSON.parse(localStorage.getItem('data')).length === 0) {
+                state.data = data
+                localStorage.setItem('data', JSON.stringify(state.data))
+            } else {
+                // @ts-ignore
+                state.data = JSON.parse(localStorage.getItem('data'))
+            }
+
             state.list = state.data
+
         },
         paginate(state, action: PayloadAction<number>) {
 
@@ -86,17 +99,12 @@ export const slice = createSlice({
 
         },
         clearBasket(state) {
-
             state.basket = []
-
         },
         updateTotal(state, action: PayloadAction<ICard[]>) {
-
             state.totalProductsPrice = Number(state.basket.reduce((acc, cur) => acc + cur.totalPrice, 0).toFixed(2))
-
         },
         setCheckboxes(state) {
-
             const filteredTypes: { [productType: string]: boolean } = {}
 
             state.data.forEach(({brand}) => {
@@ -197,9 +205,10 @@ export const slice = createSlice({
                 brand: "Брэнд",
                 description: "Описание",
                 price: 48.76,
-                type: "Тип"
+                type: "Укажите тип"
             })
 
+            localStorage.setItem('data', JSON.stringify(state.data))
             state.list = state.data
 
         },
@@ -223,17 +232,20 @@ export const slice = createSlice({
 
             state.adminEditMode = {}
             state.list = state.data
+            localStorage.setItem('data', JSON.stringify(state.data))
 
         },
         deleteFromData(state, action: PayloadAction<number>) {
 
             state.data = state.data.filter(card => card.barcode !== action.payload)
             state.list = state.data
+            localStorage.setItem('data', JSON.stringify(state.data))
 
         },
         setDataBySelectCards(state, action: PayloadAction<ISelectCard>) {
 
-            state.data = data
+            // @ts-ignore
+            state.data = JSON.parse(localStorage.getItem('data'))
 
             // типы карточек добавляются в selectCardsOn массив
             if (state.selectedCardsOn.includes(action.payload.name)) {

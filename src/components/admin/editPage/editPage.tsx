@@ -11,8 +11,6 @@ const EditPage = () => {
     const adminEditMode = useAppSelector(store => store.reducer.adminEditMode)
     const selectCards = useAppSelector(store => store.reducer.selectCards)
     const dispatch = useAppDispatch()
-    const [types, setTypes] = useState([])
-
     const options = selectCards.map(selectCard => ({value: selectCard.name, label: selectCard.name}))
 
     const [editCard, setEditCard] = useState({
@@ -27,71 +25,81 @@ const EditPage = () => {
     })
 
     const handleOption = (selections: IOption[]) => {
-        // @ts-ignore
         setEditCard({...editCard, type: selections.map(item => item.value)});
     };
-
-    console.log(editCard)
-    console.log(types)
-
 
     return (
         <div className={'container'}>
             <div className={'edit-page-box'} key={adminEditMode.barcode}>
                 <div>
                     Название
-                    <input
-                        onChange={(event) => setEditCard({...editCard, title: event.target.value})}
-                        placeholder={editCard.title}
-                        className={'edit-page-input'}
-                    />
+                    <div className={'edit-page-container'}>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, title: event.target.value})}
+                            placeholder={editCard.title}
+                            className={'edit-page-input'}
+                        />
+                    </div>
                 </div>
                 <div>
                     Описание
-                    <input
-                        onChange={(event) => setEditCard({...editCard, description: event.target.value})}
-                        placeholder={editCard.description}
-                        className={'edit-page-input'}
-                    />
+                    <div>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, description: event.target.value})}
+                            placeholder={editCard.description}
+                            className={'edit-page-input'}
+                        />
+                    </div>
                 </div>
                 <div>
                     Объем/вес
-                    <input
-                        onChange={(event) => setEditCard({...editCard, size: event.target.value})}
-                        placeholder={editCard.size}
-                        className={'edit-page-input'}
-                    />
+                    <div>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, size: event.target.value})}
+                            placeholder={editCard.size}
+                            className={'edit-page-input'}
+                        />
+                    </div>
                 </div>
                 <div>
                     Цена
-                    <input
-                        onChange={(event) => setEditCard({...editCard, price: event.target.value})}
-                        placeholder={editCard.price}
-                        className={'edit-page-input'}
-                    />
+                    <div>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, price: event.target.value})}
+                            placeholder={editCard.price}
+                            className={'edit-page-input'}
+                        />
+                    </div>
                 </div>
                 <div>
                     Бренд
-                    <input
-                        onChange={(event) => setEditCard({...editCard, brand: event.target.value})}
-                        placeholder={editCard.brand}
-                        className={'edit-page-input'}
-                    />
+                    <div>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, brand: event.target.value})}
+                            placeholder={editCard.brand}
+                            className={'edit-page-input'}
+                        />
+                    </div>
                 </div>
                 <div>
 
                 </div>
                 <div>
                     Производитель
-                    <input onChange={(event) => setEditCard({...editCard, manufacturer: event.target.value})}
-                           placeholder={editCard.manufacturer}
-                           className={'edit-page-input'}
-                    />
+                    <div>
+                        <input
+                            onChange={(event) => setEditCard({...editCard, manufacturer: event.target.value})}
+                            placeholder={editCard.manufacturer}
+                            className={'edit-page-input'}/>
+                    </div>
+
                 </div>
-                <div>
-                    Тип ухода
+                <div className={'edit-page-input-box'}>
+                    <p>
+                        Тип ухода
+                    </p>
                     <Select
-                        placeholder={editCard.type}
+                        placeholder={Array.isArray(editCard.type) ? editCard.type.join(' / ') : editCard.type}
                         isMulti
                         options={options}
                         // @ts-ignore

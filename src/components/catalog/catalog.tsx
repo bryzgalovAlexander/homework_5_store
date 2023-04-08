@@ -77,9 +77,7 @@ const Catalog = () => {
                             <button
                                 key={cardName.name}
                                 className={cardName.isChecked ? 'select-card__selected' : 'select-card'}
-                                onClick={() => {
-                                    dispatch(setDataBySelectCards(cardName))
-                                }}
+                                onClick={() => {dispatch(setDataBySelectCards(cardName))}}
                             >
                                 {cardName.name.split(' ').slice(0, 1)}<br/>
                                 {cardName.name.split(' ').slice(1).join(' ')}
