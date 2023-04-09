@@ -21,7 +21,9 @@ function App() {
     const data = useAppSelector(store => store.reducer.data)
     const dispatch = useAppDispatch();
 
-
+    if (data.length === 0) {
+        dispatch(showAllCards())
+    }
 
     useEffect(() => {
         dispatch(showAllCards())
@@ -48,9 +50,7 @@ function App() {
                     </>
                 }/>
                 <Route path={'/admin'} element={<Admin/>}/>
-                <Route path={'/editMode'} element={<
-                    // @ts-ignore
-                    EditPage/>}/>
+                <Route path={'/editMode'} element={<EditPage/>}/>
                 <Route path={'/catalog'} element={ <Catalog/> }/>
                 <Route path={'/basket'} element={ <Basket/> }/>
                 <Route path={`/card-info/${info.barcode}`} element={<CardInfo {...info}/> }

@@ -31,19 +31,18 @@ export const slice = createSlice({
         },
         showAllCards(state) {
 
-            // @ts-ignore
-            console.log()
-            // @ts-ignore
-            if (JSON.parse(localStorage.getItem('data')).length === 0) {
-                state.data = data
-                localStorage.setItem('data', JSON.stringify(state.data))
-            } else {
-                // @ts-ignore
-                state.data = JSON.parse(localStorage.getItem('data'))
+            const getItem = localStorage.getItem("data")
+
+            if (typeof getItem === 'string') {
+                if (JSON.parse(getItem).length === 0) {
+                    state.data = data
+                    localStorage.setItem('data', JSON.stringify(state.data))
+                } else {
+                    state.data = JSON.parse(getItem)
+                }
             }
 
             state.list = state.data
-
         },
         paginate(state, action: PayloadAction<number>) {
 
@@ -197,15 +196,15 @@ export const slice = createSlice({
 
             state.data.unshift({
                 image: "",
-                title: "Название",
+                title: "Название...",
                 isLiquid: true,
                 size: 450,
                 barcode: Date.now(),
-                manufacturer: "Компания",
-                brand: "Брэнд",
-                description: "Описание",
+                manufacturer: "Компания...",
+                brand: "Брэнд...",
+                description: "Описание...",
                 price: 48.76,
-                type: "Укажите тип"
+                type: "Укажите тип..."
             })
 
             localStorage.setItem('data', JSON.stringify(state.data))
@@ -219,7 +218,6 @@ export const slice = createSlice({
             if (findItem) {
                 state.adminEditMode = findItem
             }
-
         },
         adminUpdateCard(state, action: PayloadAction<ICard>) {
 
@@ -233,7 +231,6 @@ export const slice = createSlice({
             state.adminEditMode = {}
             state.list = state.data
             localStorage.setItem('data', JSON.stringify(state.data))
-
         },
         deleteFromData(state, action: PayloadAction<number>) {
 
@@ -244,26 +241,27 @@ export const slice = createSlice({
         },
         setDataBySelectCards(state, action: PayloadAction<ISelectCard>) {
 
-            // @ts-ignore
-            state.data = JSON.parse(localStorage.getItem('data'))
+            const getItem = localStorage.getItem('data')
 
-            // типы карточек добавляются в selectCardsOn массив
+            if (typeof getItem === 'string') {
+                state.data = JSON.parse(getItem)
+            }
+
             if (state.selectedCardsOn.includes(action.payload.name)) {
-                state.selectCards.map(item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
+                state.selectCards.map( item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
                 state.selectedCardsOn = state.selectedCardsOn.filter(item => item !== action.payload.name)
             } else {
-                state.selectCards.map(item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
+                state.selectCards.map( item => item.name === action.payload.name ? item.isChecked = !action.payload.isChecked : item)
                 state.selectedCardsOn.push(action.payload.name)
             }
 
-            state.selectedCardsOn.map(item => item === action.payload.name ? item : '')
+            state.selectedCardsOn.map( item => item === action.payload.name ? item : '')
 
-            state.data = state.data.filter(item =>
+            state.data = state.data.filter( item =>
                 Array.isArray(item.type) ?
-                    item.type[0].includes(action.payload.name) || item.type[1].includes(action.payload.name)
+                    item.type.includes(action.payload.name)
                     : item.type.includes(state.selectedCardsOn.toString())
             )
-
         },
         setSelectCards(state) {
             const allCards = state.data.map((card: ICard) => card.type).flat()
