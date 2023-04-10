@@ -20,7 +20,7 @@ const Card = (card: ICard) => {
         <div className={'card'}>
             <div className={'card__box'}>
                 <div className={'card__image'}>
-                    <img alt={'goods photo'} src={`images/${card.image}`}/>
+                    <img alt={'goods photo'} src={`build/static/images/${card.image}`}/>
                 </div>
                 <div>
                     <div className={'card__volume-box'}>
