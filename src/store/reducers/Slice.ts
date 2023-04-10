@@ -40,6 +40,8 @@ export const slice = createSlice({
                 } else {
                     state.data = JSON.parse(getItem)
                 }
+            } else {
+                state.data = data
             }
 
             state.list = state.data
