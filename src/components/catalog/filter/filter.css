@@ -64,6 +64,19 @@
 .filter__select-card:last-child {
   border-bottom: 0;
 }
+.filter__select-card-checked {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #196e02;
+  white-space: nowrap;
+  border-bottom: 1px dashed #C6CAD1;
+  padding: 20px 0;
+}
+.filter__select-card:last-child {
+  border-bottom: 0;
+}
 .filter__search {
   border: 0;
   width: 24px;

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './filter.css';
 import Input from "../../input/input";
 import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
-import {checkboxModeOn, filterByPrice} from "../../../store/reducers/Slice";
+import {checkboxModeOn, filterByPrice, setDataBySelectCards} from "../../../store/reducers/Slice";
 import SearchIcon from "../../icons/searchIcon";
 
 const Filter = () => {
@@ -56,7 +56,13 @@ const Filter = () => {
                 </div>
                 <div className={'filter__select-cards'}>
                     {selectCards.map( card =>
-                        <div key={card.name} className={'filter__select-card'}>{card.name}</div>
+                        <div
+                            className={card.isChecked ? 'filter__select-card-checked' : 'filter__select-card'}
+                            onClick={() => {dispatch(setDataBySelectCards(card))}}
+                            key={card.name}
+                        >
+                            {card.name}
+                        </div>
                     )}
                 </div>
             </div>
