@@ -44,7 +44,7 @@ export const slice = createSlice({
                 state.data = data
                 localStorage.setItem('data', JSON.stringify(state.data))
             }
-
+            console.log('hi')
             state.list = state.data
         },
         paginate(state, action: PayloadAction<number>) {
