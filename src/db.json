@@ -1,7 +1,6 @@
 {
   "data": [
     {
-
       "image": "image21.png",
       "title": "Cредство для мытья посуды Crystal",
       "isLiquid": true,
@@ -14,7 +13,6 @@
       "type": ["Уход за лицом", "Уход за руками"]
     },
     {
-
       "image": "image21-1.png",
       "title": "Экологичное туалетное мыло. Литсея и бергамот",
       "isLiquid": false,
@@ -27,7 +25,6 @@
       "type": "Уход за руками"
     },
     {
-
       "image": "image21-2.png",
       "title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
       "isLiquid": false,
@@ -40,7 +37,6 @@
       "type": "Гигиеническая продукция"
     },
     {
-
       "image": "image2112.png",
       "title": "Порошок стиральный Автомат 100 пятен COMPACT",
       "isLiquid": false,
@@ -53,7 +49,6 @@
       "type": ["Уход за лицом", "Уход за руками"]
     },
     {
-
       "image": "image213.png",
       "title": "Ср-во для мытья посуды Апельсин+мята",
       "isLiquid": true,
@@ -65,9 +60,7 @@
       "price": 51.99,
       "type": "Гигиеническая продукция"
     },
-
     {
-
       "image": "nivea-soft.png",
       "title": "Интенсивный увлажняющий крем, для лица, рук и тела, с маслом жожоба и витамином Е",
       "isLiquid": true,
@@ -80,7 +73,6 @@
       "type": "Уход за лицом"
     },
     {
-
       "image": "nivea-strawberry-soap.png",
       "title": "Клубника и молоко Увлажняющее мыло",
       "isLiquid": false,
@@ -93,7 +85,6 @@
       "type": "Уход за руками"
     },
     {
-
       "image": "nivea-men.png",
       "title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
       "isLiquid": true,
@@ -106,7 +97,6 @@
       "type": "Средства для бритья"
     },
     {
-
       "image": "dove-secrets.png",
       "title": "NOURISHING SECRETS ШАМПУНЬ Восстановление с куркумой и кокосовым маслом, для укрепления волос",
       "isLiquid": true,
@@ -119,7 +109,6 @@
       "type": "Уход за волосами"
     },
     {
-
       "image": "image21.png",
       "title": "Моющее средство",
       "isLiquid": true,
@@ -132,7 +121,6 @@
       "type": "Уход за руками"
     },
     {
-
       "image": "image21-1.png",
       "title": "Экологичное туалетное мыло. Литсея и бергамот",
       "isLiquid": false,
@@ -145,7 +133,6 @@
       "type": "Уход за руками"
     },
     {
-
       "image": "image21-2.png",
       "title": "Гель СМС Liquid Capsules Горный родник",
       "isLiquid": false,
@@ -158,7 +145,6 @@
       "type": "Гигиеническая продукция"
     },
     {
-
       "image": "image2112.png",
       "title": "Порошок стиральный",
       "isLiquid": false,
@@ -171,7 +157,6 @@
       "type": "Гигиеническая продукция"
     },
     {
-
       "image": "image213.png",
       "title": "Ср-во для мытья посуды",
       "isLiquid": true,
@@ -185,7 +170,6 @@
     },
 
     {
-
       "image": "nivea-soft.png",
       "title": "Интенсивный увлажняющий крем для лица",
       "isLiquid": true,
@@ -198,7 +182,6 @@
       "type": "Уход за лицом"
     },
     {
-
       "image": "nivea-strawberry-soap.png",
       "title": "Увлажняющее мыло",
       "isLiquid": false,
@@ -211,7 +194,6 @@
       "type": "Уход за руками"
     },
     {
-
       "image": "nivea-men.png",
       "title": "Автомат Гель в растворимых капсулах Liquid",
       "isLiquid": true,
