@@ -23,7 +23,7 @@ const Admin = () => {
                         <div key={card.barcode} className={'card'}>
                             <div className={'card__box'}>
                                 <div className={'card__image'}>
-                                    <img alt={'goods photo'} src={`static/images/${card.image}`}/>
+                                    <img alt={'goods photo'} src={`homework_5_store/static/images/${card.image}`}/>
                                 </div>
                                 <div>
                                     <div className={'card__volume-box'}>
