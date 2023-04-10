@@ -60,6 +60,7 @@
   white-space: nowrap;
   border-bottom: 1px dashed #C6CAD1;
   padding: 20px 0;
+  cursor: pointer;
 }
 .filter__select-card:last-child {
   border-bottom: 0;
@@ -73,6 +74,8 @@
   white-space: nowrap;
   border-bottom: 1px dashed #C6CAD1;
   padding: 20px 0;
+  cursor: pointer;
+
 }
 .filter__select-card:last-child {
   border-bottom: 0;
