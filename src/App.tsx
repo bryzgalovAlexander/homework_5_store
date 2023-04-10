@@ -43,7 +43,7 @@ function App() {
             <MobileHeader/>
             <Header/>
             <Routes>
-                <Route path={'/'} element={
+                <Route path={'/homework_5_store/'} element={
                     <>
                         <CatalogBanner/>
                         <MobileCatalogBanner/>

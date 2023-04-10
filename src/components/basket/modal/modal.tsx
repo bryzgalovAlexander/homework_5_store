@@ -16,7 +16,7 @@ const Modal = () => {
             <div className={'modal__window'}>
                 <div className={'modal__close-box'}>
                     <button className={'modal__close-button'} onClick={() => dispatch(closeModal())}>
-                        <Link to={'/'} >
+                        <Link to={'/homework_5_store/'} >
                             <CloseIcone/>
                         </Link>
                     </button>
