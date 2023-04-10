@@ -93,6 +93,7 @@ const Catalog = () => {
                     <div className={'catalog__paginate-box'}>
                         {countOfPages.map(countOfPage =>
                             <button
+                                key={countOfPage}
                                 className={'catalog__paginate-button'}
                                 onClick={() => dispatch(paginate(countOfPage))}>
                                 {countOfPage}
