@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './filter.css';
 import Input from "../../input/input";
 import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
 import {checkboxModeOn, filterByPrice, setDataBySelectCards} from "../../../store/reducers/Slice";
 import SearchIcon from "../../icons/searchIcon";
+import './filter.css';
 
 const Filter = () => {
 
