@@ -42,6 +42,7 @@ export const slice = createSlice({
                 }
             } else {
                 state.data = data
+                localStorage.setItem('data', JSON.stringify(state.data))
             }
 
             state.list = state.data
