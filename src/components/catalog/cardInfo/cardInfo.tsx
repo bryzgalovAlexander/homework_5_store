@@ -1,5 +1,4 @@
 import React from 'react';
-import BreadCrumbs from "../breadCrumbs/breadCrumbs";
 import SolidVolume from "../../icons/solidVolume";
 import QuantityButtons from "../../buttons/quantityButtons/quantityButtons";
 import CardInfoIcon from "../../icons/cardInfoIcon";
@@ -15,7 +14,6 @@ import {Link} from "react-router-dom";
 
 const CardInfo = (info: ICard) => {
 
-    const data = useAppSelector(store => store.reducer.data)
     const dispatch = useAppDispatch();
     const {addToBasket} = slice.actions
 

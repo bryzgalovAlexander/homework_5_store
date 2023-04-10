@@ -12,8 +12,6 @@ const Card = (card: ICard) => {
 
     const dispatch = useAppDispatch();
 
-    const data = useAppSelector(store => store.reducer.data)
-
     if (Array.isArray(card.type)) {
        card.type.map(item => item + ' / ')
     }
@@ -42,7 +40,6 @@ const Card = (card: ICard) => {
                         <div className={'card__annotation-box'}>
                             <p className={'card__annotation-title'}>Тип ухода: </p>
                             <p className={'card__annotation-subtext'}>
-                                {/*{card.type.length === 2 ? (card.type[0] + ' / ' + card.type[1]) : card.type }*/}
                                 {Array.isArray(card.type) ? card.type.join(` / `) : card.type}
                             </p>
                         </div>

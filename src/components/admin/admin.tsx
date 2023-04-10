@@ -7,9 +7,6 @@ import SolidVolume from "../icons/solidVolume";
 import './admin.css'
 import {Link} from "react-router-dom";
 
-
-// написать функцию редактирования карточки, удаления, добавления
-
 const Admin = () => {
 
     const data = useAppSelector(store => store.reducer.data)

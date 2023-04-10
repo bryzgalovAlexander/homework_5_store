@@ -14,7 +14,6 @@ const MobileHeader = () => {
     const basket = useAppSelector(state => state.reducer.basket);
     const totalProducts = basket.reduce((acc, cur) => acc + cur.count, 0);
 
-
     return (
         <>
             <div className={'mobile-container'}>

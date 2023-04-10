@@ -18,7 +18,6 @@ const Input = () => {
     }
 
     return (
-
         <Link to={'/catalog'}>
             <div className={'input__box'}>
                 <input value={text} onChange={(e) => setText(e.target.value)} className={'input'} placeholder={'Поиск...'} />

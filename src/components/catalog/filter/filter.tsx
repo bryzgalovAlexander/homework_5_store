@@ -44,7 +44,6 @@ const Filter = () => {
                 </div>
                 <Input/>
                 <div className={'filter__checkbox-container'}>
-                    {/*заменить на компонент Checkbox по клику искать нужные карты*/}
                     {Object.values(checkboxes).map(checkbox =>
                         <div key={checkbox} className={'filter__checkbox-box'}>
                             <input checked={checkbox.isChecked} onChange={(e) =>

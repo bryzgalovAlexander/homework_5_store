@@ -6,7 +6,6 @@ import Line from "../icons/line";
 import ShortLine from "../icons/shortLine";
 import SultanLogo from "../icons/sultanLogo";
 import OnlineCheck from "../icons/onlineCheck";
-import LongLine from "../icons/longLine";
 import BasketIcon from "../icons/basketIcon";
 import img from '../../images/Group 102.png';
 import PriceButton from "../buttons/priceButton/priceButton";
@@ -20,7 +19,6 @@ const Header = () => {
     const basket = useAppSelector(state => state.reducer.basket);
     const totalProductsPrice = useAppSelector(state => state.reducer.totalProductsPrice);
     const totalProducts = basket.reduce((acc, cur) => acc + cur.count, 0);
-
 
     return (
         <header>
