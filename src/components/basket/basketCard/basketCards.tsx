@@ -17,7 +17,7 @@ const BasketCard = (basket: IBasket) => {
             <div className={'basket-card__box'}>
                 <div className={'basket-card__card'}>
                     <a className={'basket-card__image-container'}>
-                        <img className={'basket-card__image'} alt={'фото товара'} src={`static/images/${basket.image}`}/>
+                        <img className={'basket-card__image'} alt={'фото товара'} src={`homework_5_store/static/images/${basket.image}`}/>
                     </a>
                     <div>
                         <div className={'card__volume-box'}>
